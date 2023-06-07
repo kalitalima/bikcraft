@@ -42,7 +42,7 @@ a {
   font-size: 18px;
 }
 
-header-menu a:after {
+.header-menu a:after {
   content: "";
   display: block;
   height: 2px;
