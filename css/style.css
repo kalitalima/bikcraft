@@ -40,16 +40,24 @@ a {
   display: inline-block;
   padding: 16px 0px;
   font-size: 18px;
+  position: relative;
 }
 
 .header-menu a:after {
   content: "";
   display: block;
   height: 2px;
-  width: 100%;
-  color: #fff;
+  width: 0;
+  background: #fff;
   margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
 }
+
+.header-menu a:hover:after {
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   .header-menu {
     gap: 20px;
@@ -63,6 +71,10 @@ a {
 
   .header-menu a:hover {
     background-color: #2e2e2e;
+  }
+
+  .header-menu a:after {
+    display: none;
   }
 }
 
