@@ -14,7 +14,8 @@
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
 
-/* Biciletas */
+/* Bicicletas */
+@import "./bicicletas/bicicletas.css";
 @import "./bicicletas/bicicletas-lista.css";
 
 /* Seguros */
